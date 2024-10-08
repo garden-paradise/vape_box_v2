@@ -1,0 +1,124 @@
+@import '~react-image-gallery/styles/scss/image-gallery.scss';
+
+.product {
+  color: white;
+  .product_sec1 {
+    margin: 44px 0 100px;
+    display: flex;
+    font-weight: 700;
+    font-size: 16px;
+    .product_sec1_slider {
+      width: 600px;
+      margin-right: 20px;
+    }
+    .product_sec1_slider_info {
+      display: flex;
+      justify-content: space-around;
+      flex-direction: column;
+      font-family: 'Aeroport';
+
+      .product_info_name {
+        font-family: 'Aeroport';
+        font-size: 40px;
+      }
+      .product_info_subtitle {
+        display: flex;
+        justify-content: space-between;
+        color: rgba(151, 151, 151, 1);
+      }
+      .product_info_subtitle_img {
+        display: flex;
+      }
+      .product_info_subtitle_brend {
+        color: white;
+        font-weight: 700;
+      }
+    }
+    .product_info_subtitle_color {
+      .product_info_subtitle_color_name {
+        margin-bottom: 20px;
+      }
+      .product_info_subtitle_color_block {
+        display: flex;
+        .product_info_subtitle_color_circle {
+          margin-right: 20px;
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          // display: flex;
+          // justify-content: ;
+        }
+        .block1 {
+          background: red;
+        }
+        .block2 {
+          background: rgb(240, 94, 94);
+        }
+        .block3 {
+          background: rgba(237, 247, 53, 0.843);
+        }
+        .block4 {
+          background: rgb(83, 214, 83);
+        }
+        .block5 {
+          background: green;
+        }
+      }
+    }
+    .product_info_btn {
+      width: 201px;
+      height: 50px;
+      background: #ff0100;
+      border-radius: 30px;
+      border: 0;
+      font-size: 14px;
+      color: white;
+      font-family: 'Aeroport-Medium';
+    }
+    .product_info_delivery {
+      .product_info_delivery_title {
+        font-size: 18px;
+        font-family: 'Aeroport-Medium';
+      }
+      .product_info_delivery_divs_option {
+        display: flex;
+        .product_info_delivery_option {
+          display: flex;
+          margin: 20px 20px 0 0;
+          .product_info_delivery_option_img {
+            margin-right: 12px;
+          }
+          .product_info_delivery_date {
+            color: #979797;
+            font-weight: 300;
+          }
+        }
+      }
+    }
+  }
+  .product_sec3 {
+    &-title {
+      margin-bottom: 50px;
+      font-family: 'RobotoCondensed';
+      font-size: 40px;
+    }
+    &-bottom {
+      font-family: 'Aeroport-Bold';
+      font-size: 120px;
+      position: relative;
+    
+      background: conic-gradient(
+        from 90deg at 50% 50%,
+        #9d60ff -55.52deg,
+        #5584ff 64deg,
+        #bc91ff 180.21deg,
+        #9d60ff 304.48deg,
+        #5584ff 424deg
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      top: -70px;
+      right: -487px;
+    }
+  }
+}

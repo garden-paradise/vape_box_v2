@@ -1,0 +1,50 @@
+@mixin Flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card {
+  color: black;
+  width: 259px;
+  height: 324px;
+  border-radius: 10px;
+  background: white;
+  padding: 12px 20px 20px 14px;
+  margin-left: 18px;
+  &-1block,
+  &-2block {
+    @include Flex;
+  }
+  &-1blockHeart {
+    width: 40px;
+    height: 40px;
+    background: #f6f6f6;
+    border-radius: 50%;
+    @include Flex;
+    cursor: pointer;
+  }
+  &-1blockDelete {
+    cursor: pointer;
+  }
+  &-aspectRatio {
+    width: 108px;
+    height: 163px;
+    background: #c4c4c4;
+    margin: 0 auto;
+  }
+  &-title {
+    margin: 16px auto 22px;
+    text-align: center;
+    font-size: 16px;
+  }
+  &-2blockShop {
+    @include Flex;
+    border-radius: 50px;
+    background-color: #3c4043;
+    width: 60px;
+    height: 34px;
+    padding-left: 15px;
+    cursor: pointer;
+  }
+}

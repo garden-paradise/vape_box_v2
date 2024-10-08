@@ -1,0 +1,84 @@
+.articleBlog {
+  &-title {
+    padding: 50px 0 20px;
+    font-size: 40px;
+    color: white;
+  }
+  &-authors {
+    display: flex;
+    color: #d9d9d9;
+  }
+  &-authorsName {
+    margin-right: 48px;
+  }
+  &-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+  }
+  &-img {
+    width: 760px;
+    height: 400px;
+    background-color: #d9d9d9;
+    border-radius: 10px;
+    margin-bottom: 50px;
+  }
+  &-text {
+    color: #d9d9d9;
+    max-width: 612px;
+    margin-left: 50px;
+  }
+  &-textP {
+    margin-bottom: 20px;
+  }
+  &-emailForm {
+    width: 387px;
+    height: 331px;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    color: black;
+    padding: 20px;
+    font-size: 16px;
+  }
+  &-emailFormTitle {
+    font-size: 20px;
+  }
+  &-emailFormSubtitle {
+    margin-top: 20px;
+  }
+  &-form {
+    max-width: 327px;
+    display: flex;
+    flex-direction: column;
+    margin: 30px auto;
+  }
+  &-formEmail {
+    height: 50px;
+    border-radius: 5px;
+    background-color: #e2dfdf;
+    border: 0;
+  }
+  &-formError {
+    border: 2px solid red;
+  }
+  &-btn {
+    height: 50px;
+    color: white;
+    background-color: #3c4043;
+    border: 0;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+  &-leftTitle {
+    font-family: 'Aeroport-Medium';
+    font-size: 20px;
+    color: white;
+    margin: 50px 0 32px;
+  }
+  &-socialBlock {
+    display: flex;
+    justify-content: space-between;
+    max-width: 300px;
+  }
+}

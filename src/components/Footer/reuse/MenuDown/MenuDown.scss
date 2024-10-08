@@ -1,0 +1,51 @@
+.menuDown {
+  display: flex;
+  flex-direction: column;
+  .menuDown_title {
+    font-family: 'Roboto-Regular';
+    font-size: 24px;
+    margin-bottom: 23px;
+  }
+  .menuDown_subtitle {
+    font-family: 'Aeroport';
+    margin-bottom: 11px;
+    color: white;
+  }
+  .menuDown_blockImg {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: repeat(2, 32px);
+    grid-template-rows: repeat (2, 32px);
+    grid-gap: 30px;
+  }
+  .menuDown_tel {
+    font-family: 'Roboto-Bold';
+    color: white;
+    font-size: 24px;
+  }
+  .menuDown_form {
+    width: 305px;
+    input[placeholder] {
+      padding-left: 10px;
+    }
+    .menuDown_inputEmail {
+      background-color: #f8f8f8;
+      outline: none;
+      border: 0;
+      height: 50px;
+      width: 100%;
+    }
+    .menuDown_inputEmail_error {
+      border: 2px solid red;
+    }
+    .menuDown_btn {
+      border: 0;
+      font-family: 'Aeroport-Light';
+      width: 100%;
+      height: 50px;
+      background: #3c4043;
+      color: white;
+      cursor: pointer;
+    }
+  }
+}

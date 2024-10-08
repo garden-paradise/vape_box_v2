@@ -1,0 +1,138 @@
+@mixin FlexWrap {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 250px;
+}
+
+@mixin LineBlock {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Aeroport';
+  margin-bottom: 20px;
+}
+
+.insideMenu {
+  padding-bottom: 100px;
+  .insideMenu_nav {
+    height: 80px;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'Aeroport';
+    margin: 100px 0 50px;
+    color: #979797;
+    .insideMenu_ul {
+      display: flex;
+      justify-content: space-around;
+      list-style-type: none;
+      .insideMenu_li {
+        cursor: pointer;
+      }
+      .insideMenu_li:not(:last-child) {
+        margin-right: 8vw;
+      }
+      .active_menu {
+        border-bottom: 2px solid black;
+        color: black;
+      }
+    }
+  }
+  .insideMenu_title {
+    font-size: 40px;
+    font-family: 'Roboto-Regular';
+    padding-bottom: 50px;
+  }
+  .display_none {
+    display: none;
+  }
+  .insideMenu_block1 {
+    display: flex;
+    .insideMenu_block {
+      display: flex;
+      flex-direction: column;
+    }
+    .info_block_1 {
+      margin-right: 100px;
+      width: 690px;
+    }
+
+    .insideMenu_block_complects {
+      display: flex;
+      flex-direction: column;
+      .insideMenu_block_complect {
+        display: flex;
+        margin-bottom: 20px;
+        font-family: 'Aeroport';
+        .insideMenu_block_complect_num {
+          margin-right: 30px;
+          color: #c4c4c4;
+          .insideMenu_block_complect_name {
+            font-size: 18px;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
+  .insideMenu_block2 {
+    .insideMenu_block2_infos {
+      @include FlexWrap;
+      .insideMenu_block2_info {
+        @include LineBlock;
+        width: 400px;
+        .insideMenu_block2_info_name {
+          color: #c4c4c4;
+        }
+      }
+    }
+  }
+  .insideMenu_block3 {
+    .insideMenu_block3_comments {
+      display: flex;
+      justify-content: space-between;
+      .insideMenu_block3_comment {
+        background: #c4c4c4;
+        border-radius: 10px;
+        width: 590px;
+        height: 200px;
+      }
+    }
+  }
+  .insideMenu_block4 {
+    .insideMenu_block4_availabilitys {
+      @include FlexWrap;
+    }
+    .insideMenu_block4_availability {
+      @include LineBlock;
+      width: 450px;
+      .insideMenu_block4_availability_adress {
+        color: #c4c4c4;
+      }
+      .cardProduct_comments_img {
+        display: flex;
+        height: 25px;
+        .cardProduct_comments_img_block {
+          width: 6px;
+          margin-left: 6px;
+        }
+        .block1 {
+          background: red;
+        }
+        .block2 {
+          background: rgb(240, 94, 94);
+        }
+        .block3 {
+          background: rgba(237, 247, 53, 0.843);
+        }
+        .block4 {
+          background: rgb(83, 214, 83);
+        }
+        .block5 {
+          background: green;
+        }
+      }
+    }
+  }
+}

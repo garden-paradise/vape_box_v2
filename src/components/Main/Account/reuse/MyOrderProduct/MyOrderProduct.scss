@@ -1,0 +1,64 @@
+.myOrderProduct {
+  width: 100%;
+  padding: 20px 0;
+  color: white;
+  font-family: 'Aeroport-Medium';
+  margin-right: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &-img {
+    width: 100px;
+    height: 100px;
+    background-color: #a99e9e;
+  }
+  &-count {
+    font-family: 'Aeroport-Light';
+  }
+  &-sum {
+    font-size: 22px;
+  }
+}
+.MyOrderProductCollapsible,
+.MyOrderProductCollapsible_open {
+  display: flex;
+  justify-content: space-between;
+  width: 838px;
+  cursor: pointer;
+}
+.Collapsible__contentOuter {
+  border-bottom: 0.5px solid;
+  border-image: linear-gradient(to right, #5584ff, #9d60ff) 47% 0%;
+}
+.Catalog:not(:last-child) {
+  border-bottom: 1px solid #c4c4c4;
+}
+.Collapsible__trigger {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Collapsible__trigger.is-open img {
+  transform: rotate(180deg);
+  transition: 0.5s;
+}
+.Collapsible__trigger.is-closed img {
+  transform: rotate(0deg);
+  transition: 0.5s;
+}
+.myOrderProducts_info {
+  padding-bottom: 30px;
+  color: white;
+  display: grid;
+  grid-template-columns: 120px 220px 300px;
+  justify-content: space-between;
+  margin-left: 160px;
+  &-title {
+    font-family: 'Aeroport-Medium';
+  }
+  &-subTitle {
+    margin-top: 10px;
+    font-family: 'Aeroport';
+    font-size: 16px;
+  }
+}

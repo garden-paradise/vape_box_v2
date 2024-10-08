@@ -1,0 +1,139 @@
+@mixin wordFon {
+  font-family: 'Aeroport-Bold';
+  font-size: 120px;
+  position: relative;
+
+  background: conic-gradient(
+    from 90deg at 50% 50%,
+    #9d60ff -55.52deg,
+    #5584ff 64deg,
+    #bc91ff 180.21deg,
+    #9d60ff 304.48deg,
+    #5584ff 424deg
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.home {
+  color: white;
+  .home_sec1 {
+    height: 400px;
+    background: #c4c4c4;
+  }
+  .home_sec2 {
+    .sectionBlock {
+      margin-bottom: 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      font-family: 'RobotoCondensed';
+      .sectionBlock_title {
+        font-size: 40px;
+        margin: 0;
+        padding: 0%;
+      }
+      .sectionBlock_url {
+        color: white;
+        text-decoration: none;
+      }
+      .sectionBlock_url_blog {
+        color: #1f1f1f;
+      }
+    }
+    .sectionBlock_top {
+      padding-top: 100px;
+    }
+    .home_sec2_new {
+      .home_sec2_brd {
+        border-radius: 10px;
+      }
+      .home_sec2_new_s2 {
+        @include wordFon;
+        top: -65px;
+      }
+      .home_sec2_new_s3 {
+        @include wordFon;
+        top: -60px;
+        left: 730px;
+        padding-bottom: 50px;
+      }
+    }
+  }
+  .home_sec2_2 {
+    background-color: white;
+    color: #1f1f1f;
+    padding: 200px 0 50px;
+  }
+  .home_sec2_3 {
+    padding: 100px 0 50px;
+  }
+  .home_sec3 {
+    background-color: white;
+    color: #3c4043;
+    .home_sec2_new_s4 {
+      @include wordFon;
+      top: 42px;
+    }
+    .home_sec3_about {
+      display: flex;
+      justify-content: space-between;
+      .home_sec3_about_img {
+        width: 590px;
+        background: #c4c4c4;
+        height: 500px;
+      }
+      .home_sec3_about_info {
+        width: 590px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        font-family: 'Aeroport';
+        .home_sec3_about_info_t {
+          display: flex;
+          justify-content: flex-end;
+          font-family: 'Roboto-Regular';
+          font-size: 40px;
+        }
+        .home_sec3_about_info_p {
+          margin-bottom: 20px;
+        }
+        .home_sec3_about_info_btn {
+          display: flex;
+          justify-content: flex-end;
+          .home_sec3_about_info_link {
+            color: white;
+            text-decoration: none;
+            width: 200px;
+            height: 50px;
+            background: #3c4043;
+            border-radius: 30px;
+            font-size: 16px;
+            font-family: 'Aeroport-Medium';
+            padding: 16px 62px;
+          }
+        }
+      }
+    }
+  }
+  .home_sec5_article {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, 590px);
+    grid-gap: 20px;
+  }
+  .home_sec6_shops {
+    display: flex;
+    justify-content: space-between;
+    .home_sec6_shops_map {
+      border: 0;
+      border-radius: 20px;
+      z-index: 2;
+    }
+  }
+  .home_sec2_new_s6 {
+    @include wordFon;
+    top: -63px;
+    left: 850px;
+  }
+}

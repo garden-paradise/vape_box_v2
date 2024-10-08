@@ -1,0 +1,86 @@
+.catalog {
+  margin-bottom: 200px;
+  .catalog_sec {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    &-leftTitle {
+      display: flex;
+      margin-bottom: 22px;
+    }
+    &-leftTitleImg {
+      margin-right: 24px;
+    }
+    &-leftBlock {
+      width: 285px;
+      height: auto;
+      border-radius: 20px;
+      background-color: #ffffff;
+      color: black;
+      padding-bottom: 30px;
+    }
+    &-leftBlockSale {
+      border-bottom: 1px solid #c4c4c4;
+      padding: 30px 20px;
+      input[type='checkbox'] + label {
+        cursor: pointer;
+      }
+      input[type='checkbox'] {
+        display: none;
+      }
+      input[type='checkbox'] + label:before {
+        content: '\2714';
+        margin: 0 20px 2px 0;
+        width: 20px;
+        height: 20px;
+        background-color: #f6f6f6;
+        border-radius: 50%;
+        display: inline-block;
+        vertical-align: bottom;
+        color: transparent;
+        transition: 0.2s;
+      }
+      input[type='checkbox']:checked + label:before {
+        background-color: red;
+        border-color: red;
+        color: #fff;
+        font-size: 11px;
+        padding: 2.4px 5.5px;
+      }
+    }
+    &-leftBlockColor {
+      padding: 20px;
+      padding-bottom: 30px;
+    }
+    &-leftBlockColorBlock {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    &-leftBlockColorCircle {
+      width: 32px;
+      height: 32px;
+      background-color: #c4c4c4;
+      border-radius: 50%;
+      margin: 10px 8px 0 0;
+    }
+    &-leftBtn {
+      margin-top: 30px;
+      color: white;
+      background: #3c4043;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+    }
+    &-leftBlockReset {
+      margin-top: 30px ;
+      font-family: 'Aeroport-Medium';
+      text-align: center;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .catalog_sec_right {
+      width: 100%;
+    }
+  }
+}

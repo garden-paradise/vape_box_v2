@@ -1,0 +1,74 @@
+.selectedProducts {
+  border-radius: 10px;
+}
+
+.selectedProduct {
+  width: 770px;
+  padding: 30px 30px;
+  background-color: #ffffff;
+  &-delete {
+    width: 12px;
+    position: relative;
+    top: -20px;
+    right: -98%;
+    cursor: pointer;
+  }
+  &-delete:hover {
+    color: red;
+    transition: .5s;
+  }
+  &-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &:not(:last-child) {
+    border-bottom: 1px black solid;
+  }
+  &:first-child {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  &:last-child {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  &-img {
+    width: 100px;
+    height: 100px;
+    background-color: #a99e9e;
+  }
+  &-info {
+    display: flex;
+    flex-direction: column;
+  }
+  &-info_name {
+    font-family: 'Aeroport-Medium';
+    font-size: 20px;
+    margin-bottom: 16px;
+  }
+  &-info_title {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    font-family: 'Aeroport';
+    color: #c4c4c4;
+  }
+  &-btn {
+    display: flex;
+    font-family: 'Aeroport-Medium';
+  }
+  &-btn_count {
+    padding: 0 42px;
+  }
+  &-btn_c {
+    cursor: pointer;
+  }
+  &-price {
+    display: flex;
+  }
+  &-price_count {
+    font-family: 'Aeroport-Medium';
+    margin-right: 5px;
+  }
+}

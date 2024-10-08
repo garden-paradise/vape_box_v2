@@ -1,0 +1,25 @@
+.shops {
+  &-sec {
+    display: flex;
+    justify-content: space-between;
+  }
+  &-map {
+    border: 0;
+    width: 610px;
+    height: 570px;
+    border-radius: 5px;
+  }
+  &-secShops {
+    overflow-y: scroll;
+    width: 550px;
+    height: 570px;
+    margin-right: 88px;
+  }
+  &-secShops::-webkit-scrollbar {
+    width: 6px;
+    background-color: #f9f9fd;
+  }
+  &-secShops::-webkit-scrollbar-thumb {
+    background-color: #3c4043;
+  }
+}

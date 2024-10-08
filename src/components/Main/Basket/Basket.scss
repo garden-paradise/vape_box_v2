@@ -1,0 +1,234 @@
+@mixin Collapse {
+  width: 770px;
+  border-end-end-radius: 10px;
+  border-end-start-radius: 10px;
+  background-color: white;
+  font-family: 'Aeroport-Medium';
+  padding: 0 30px;
+}
+@mixin Form {
+  background-color: #f6f6f6;
+  border: 0;
+  border-radius: 5px;
+  font-family: 'Aeroport-Light';
+}
+
+.basket {
+  color: white;
+  padding-bottom: 180px;
+}
+.basket_sec1 {
+  display: flex;
+  justify-content: space-between;
+  color: #000000;
+
+  .basket_sec1_left {
+    .CustomTriggerCSS,
+    .CustomTriggerCSS_open {
+      width: 770px;
+      height: 100px;
+      font-size: 28px;
+      font-family: 'Aeroport-Medium';
+      border-radius: 10px;
+      background-color: white;
+      display: flex;
+      align-items: center;
+      padding-left: 30px;
+    }
+    .CustomTriggerCSS_open {
+      border-end-end-radius: 0;
+      border-end-start-radius: 0;
+    }
+    .Collapsible {
+      margin-bottom: 30px;
+    }
+    .basketBlock_delivery {
+      @include Collapse;
+      height: 370px;
+      &-citiTitle {
+        padding: 0px 0 20px;
+      }
+      &-citiInput {
+        width: 560px;
+        height: 50px;
+        background-color: #3c4043;
+        color: white;
+        padding: 0 20px;
+        border-radius: 5px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: 'Aeroport-Light';
+      }
+      &-close {
+        cursor: pointer;
+        width: 50px;
+      }
+      &-deliveryTitle {
+        font-size: 24px;
+        padding: 30px 0 25px;
+      }
+      &-delivery {
+        width: 340px;
+        height: 150px;
+        background-color: #3c4043;
+        color: white;
+        padding: 0 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 5px;
+      }
+      &-deliveryPickup {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      &-deliveryCircle {
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        border: 1px white solid;
+        cursor: pointer;
+      }
+      &-deliveryBron {
+        font-size: 14px;
+        color: #979797;
+        padding: 10px 0;
+      }
+    }
+    .basketBlock_pay {
+      @include Collapse;
+      height: 300px;
+      &-title {
+        font-family: 'Aeroport';
+        color: #979797;
+        margin-bottom: 30px;
+      }
+      &-change {
+        font-size: 24px;
+        margin-bottom: 25px;
+      }
+      &-subtitle {
+        font-size: 14px;
+        font-family: 'Aeroport';
+        color: #e7e7e7;
+        margin-top: 10px;
+      }
+    }
+    .basketBlock_recipient {
+      @include Collapse;
+      height: 500px;
+      &-title {
+        color: #979797;
+        font-family: 'Aeroport';
+        margin-bottom: 40px;
+      }
+      &-url {
+        color: #979797;
+      }
+      &-payForm {
+        display: flex;
+        flex-direction: column;
+      }
+      &-forms {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 255px);
+        grid-gap: 20px 60px;
+      }
+      &-form {
+        height: 50px;
+        @include Form;
+      }
+      &-formError {
+        border: 2px solid red;
+      }
+      &-formComment {
+        @include Form;
+        height: 110px;
+        width: 570px;
+        margin: 20px 0;
+      }
+      &-formLabel {
+        font-family: 'Aeroport';
+        font-size: 14px;
+        color: #979797;
+      }
+      &-formBtn {
+        background-color: #3c4043;
+        color: white;
+        margin-top: 30px;
+        position: relative;
+        left: 72%;
+      }
+    }
+  }
+
+  .basket_sec1_right {
+    width: 388px;
+    height: 438px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 0 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #000000;
+    &-totalCount {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-family: 'Aeroport';
+      padding-bottom: 24px;
+    }
+    &-totalCount_title {
+      font-size: 16px;
+    }
+    &-totalCount_sum {
+      font-size: 22px;
+    }
+    &-filled {
+      border-bottom: 1px solid black;
+      border-top: 1px solid black;
+      padding: 20px 0;
+    }
+    &-filled_item {
+      display: flex;
+      margin-bottom: 10px;
+      align-items: center;
+    }
+    &-filled_circle {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: #f6f6f6;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 20px;
+    }
+    &-filled_title {
+      font-size: 16px;
+    }
+    &-itog {
+      display: flex;
+      justify-content: space-between;
+      font-family: 'Aeroport';
+      margin: 20px 0 30px;
+    }
+    &-itog_title {
+      font-size: 20px;
+    }
+    &-itog_sum {
+      font-size: 22px;
+    }
+    &-btn {
+      color: white;
+      background-color: #3c4043;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}

@@ -1,0 +1,27 @@
+.articleComp {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 590px;
+  border-radius: 10px;
+  height: 416px;
+  background-color: #323232;
+  padding: 0 18px;
+  .articleComp_img {
+    width: 552px;
+    height: 286px;
+    background: #c4c4c4;
+    border-radius: 10px;
+    margin: 0 auto;
+  }
+  .articleComp_info {
+    margin-top: 30px;
+    .articleComp_link {
+      text-decoration: none;
+      font-size: 30px;
+      color: white;
+      font-family: 'Aeroport-Bold';
+
+    }
+  }
+}

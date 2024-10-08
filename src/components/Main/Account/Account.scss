@@ -1,0 +1,149 @@
+@mixin Collapse {
+  width: 770px;
+  border-end-end-radius: 10px;
+  border-end-start-radius: 10px;
+  background-color: white;
+  font-family: 'Aeroport-Medium';
+  padding: 0 30px;
+}
+@mixin Form {
+  background-color: #f6f6f6;
+  border: 0;
+  border-radius: 5px;
+  font-family: 'Aeroport-Light';
+}
+@mixin Grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 255px);
+  grid-gap: 20px;
+}
+@mixin Title {
+  font-size: 30px;
+  color: white;
+}
+@mixin SubTitle {
+  display: grid;
+  font-size: 16px;
+  color: #d9d9d9;
+  padding-bottom: 20px;
+  border-bottom: 0.5px solid;
+  border-image: linear-gradient(to right, #5584ff, #9d60ff) 47% 0%;
+}
+
+.account {
+  margin-bottom: 200px;
+  .account_sec {
+    display: flex;
+    justify-content: space-between;
+    .account_left {
+      width: 305px;
+      &-blockName {
+        color: white;
+        background-color: #3c4043;
+        height: 138px;
+        border-radius: 5px 5px 0 0;
+        padding: 30px;
+      }
+      &-name {
+        font-family: 'Aeroport-Medium';
+        font-size: 24px;
+        margin-bottom: 20px;
+      }
+      &-blockMenu {
+        border-radius: 0 0 5px 5px;
+        background-color: white;
+      }
+      &-menu {
+        height: 100px;
+        display: flex;
+        align-items: center;
+        padding-left: 30px;
+        cursor: pointer;
+      }
+      &-menu:hover {
+        background-color: #e3e3e3;
+      }
+      &-menuActive {
+        background-color: #e3e3e3;
+      }
+    }
+    .account_forms {
+      display: flex;
+      .account_right {
+        display: flex;
+        flex-direction: column;
+        &-formPassword {
+          display: flex;
+          flex-direction: column;
+        }
+        &-formInfoTitle {
+          @include Title;
+          margin-bottom: 30px;
+        }
+        &-formPassTitle {
+          margin-bottom: 90px;
+        }
+        &-formInfo {
+          margin: 0 81px 0 29px;
+        }
+        &-forms {
+          @include Grid;
+          width: 530px;
+        }
+        &-formsAdress {
+          @include Grid;
+          grid-template-columns: 357px 154px;
+        }
+        &-formApartament {
+          width: 173px;
+        }
+        &-form {
+          height: 50px;
+          @include Form;
+        }
+        &-formPass {
+          width: 255px;
+        }
+        &-formPass:not(:nth-child(4)) {
+          margin-bottom: 20px;
+        }
+        &-formLong {
+          width: 357px;
+        }
+        &-formShort {
+          width: 154px;
+        }
+        &-formError {
+          border: 2px solid red;
+        }
+        &-formLabel {
+          font-family: 'Aeroport';
+          font-size: 14px;
+          color: #d9d9d9;
+          margin-bottom: 50px;
+        }
+        &-formBtn {
+          background-color: #ff0100;
+          color: white;
+          margin-top: 33px;
+        }
+      }
+    }
+    .account_myOrder {
+      &-title {
+        @include Title;
+        margin-bottom: 40px;
+      }
+      &-subTitle {
+        @include SubTitle;
+        grid-template-columns: 160px 305px 95px 140px 70px;
+      }
+    }
+    .account_favorites {
+      &-subTitle {
+        @include SubTitle;
+        grid-template-columns: 205px 365px 95px;
+      }
+    }
+  }
+}

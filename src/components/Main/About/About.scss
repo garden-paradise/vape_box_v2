@@ -1,0 +1,56 @@
+.about {
+  font-size: 20px;
+  &-section {
+    display: flex;
+    justify-content: space-between;
+  }
+  &-info {
+    width: 508px;
+    color: white;
+  }
+  &-info div {
+    margin-bottom: 30px;
+  }
+  &-img {
+    width: 587px;
+    height: 444px;
+    background-color: #c4c4c4;
+  }
+  &-title {
+    font-size: 30px;
+  }
+  &-blockquote {
+    margin: 100px 0;
+    width: 100%;
+    font-size: 40px;
+    color: white;
+    background-color: #c4c4c4;
+    padding: 147px;
+    text-align: center;
+  }
+  &-sectionWhite {
+    background-color: white;
+    padding: 52px 0;
+  }
+  &-infoBlack {
+    color: black;
+    width: 488px;
+  }
+  &-infoBlack div {
+    margin-bottom: 25px;
+  }
+  &-imgWhiteLeft {
+    width: 692px;
+    height: 588px;
+    background-color: #c4c4c4;
+  }
+  &-marker {
+    font-size: 24px;
+    font-family: 'Aeroport-Bold';
+  }
+  &-imgWhiteRight {
+    width: 610px;
+    height: 431px;
+    background-color: #c4c4c4;
+  }
+}

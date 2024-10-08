@@ -1,0 +1,62 @@
+@mixin Form {
+  background-color: #f6f6f6;
+  border: 0;
+  border-radius: 5px;
+  font-family: 'Aeroport-Light';
+}
+
+.сontacts {
+  &-section {
+    display: flex;
+  }
+  &-title {
+    font-size: 28px;
+    color: white;
+    margin-bottom: 30px;
+  }
+  &-payForm {
+    display: flex;
+    flex-direction: column;
+  }
+  &-forms {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 285px);
+    grid-gap: 20px;
+  }
+  &-form {
+    height: 50px;
+    @include Form;
+  }
+  &-formError {
+    border: 2px solid red;
+  }
+  &-formMessage {
+    @include Form;
+    height: 210px;
+    width: 590px;
+    margin: 20px 0;
+  }
+  &-formLabel {
+    font-family: 'Aeroport';
+    font-size: 14px;
+    color: #979797;
+  }
+  &-formBtn {
+    background-color: #ff0100;
+    color: white;
+    margin-top: 10px;
+  }
+  &-address {
+    margin-left: 120px;
+  }
+  &-addressInfo {
+    width: 416px;
+    color: #d9d9d9;
+  }
+  &-addressInfoTel {
+    color: #d9d9d9;
+  }
+  &-addressInfo div {
+    margin-bottom: 20px;
+  }
+}

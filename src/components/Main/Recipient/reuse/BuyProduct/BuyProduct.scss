@@ -1,0 +1,45 @@
+.buyProduct {
+  width: 710px;
+  padding: 40px 0 30px;
+  border-bottom: .5px solid;
+  border-image: linear-gradient(to right, #5584ff, #9d60ff) 47% 0%;
+  &-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &-img {
+    width: 100px;
+    height: 100px;
+    background-color: #a99e9e;
+  }
+  &-info {
+    display: flex;
+    flex-direction: column;
+  }
+  &-info_name {
+    font-family: 'Aeroport-Medium';
+    font-size: 20px;
+    margin-bottom: 16px;
+  }
+  &-info_title {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    font-family: 'Aeroport';
+    color: #c4c4c4;
+  }
+  &-btn {
+    display: flex;
+    font-family: 'Aeroport-Medium';
+  }
+  &-btn_count {
+  }
+  &-price {
+    display: flex;
+  }
+  &-price_count {
+    font-family: 'Aeroport-Medium';
+    margin-right: 5px;
+  }
+}

@@ -1,0 +1,124 @@
+@mixin Dropdown {
+  font-size: 18px;
+  background: white;
+  width: 285px;
+  color: black;
+  cursor: pointer;
+  line-height: 50px;
+  border-radius: 5px;
+  padding: 0 20px;
+}
+
+.сomparison {
+  color: white;
+  font-family: 'Aeroport';
+  &-prod {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 30px;
+    border-image: linear-gradient(to right, #5584ff, #9d60ff) 47% 0%;
+    border-bottom: 0.5px solid;
+  }
+  &-prodLeft {
+    font-size: 16px;
+  }
+  &-prodLeftCount {
+    color: #d9d9d9;
+  }
+  &-dropdownControl {
+    @include Dropdown;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+  }
+  &-dropdownMenu {
+    @include Dropdown;
+    position: absolute;
+    z-index: 2;
+  }
+  &-dropdownClosed,
+  &-dropdownOpen {
+    border: solid black;
+    border-width: 0 1px 1px 0;
+    display: inline-block;
+    padding: 3px;
+  }
+  &-dropdownClosed {
+    top: 8px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+  &-dropdownOpen {
+    top: 12px;
+    transform: rotate(-455deg);
+    -webkit-transform: rotate(-135deg);
+  }
+  &-prodLeftCheckbox {
+    margin-top: 20px;
+  }
+  &-prodLeftCircles {
+    display: flex;
+    margin: 160px 0 0 30px;
+  }
+  &-prodLeftCircle {
+    width: 50px;
+    height: 50px;
+    background-color: #ff0100;
+    border-radius: 50%;
+  }
+  &-prodLeftCircle:hover {
+    background-color: #ff8585;
+  }
+  &-prodLeftCircle:last-child {
+    margin-left: 20px;
+  }
+  &-prodRight {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    cursor: pointer;
+  }
+  &-prodRightTitle {
+    margin-bottom: 30px;
+  }
+  &-prodRightDelete {
+    margin-left: 20px;
+    font-family: 'Aeroport-Light';
+    font-size: 14px;
+  }
+  &-prodRightCarousel {
+    display: flex;
+  }
+
+  &-characteristic {
+    background: white;
+    border-radius: 20px;
+    margin-top: 42px;
+    padding: 30px 20px 20px;
+    color: black;
+  }
+  &-characteristicTitle {
+    margin: 0 0 40px 30px;
+    font-family: 'Aeroport-Medium';
+    font-size: 28px;
+  }
+  &-characteristicSub {
+    width: 300px;
+    padding: 12px 30px;
+  }
+  &-characteristicSub:not(:last-child) {
+    margin-bottom: 28px;
+    padding: 12px 30px;
+  }
+  &-characteristicSub:hover {
+    background: #1f1f1f;
+    color: white;
+    transition: 0.4s;
+    width: 100%;
+    position: relative;
+  }
+  &-characteristicBlock {
+    display: flex;
+  }
+}

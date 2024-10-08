@@ -1,0 +1,78 @@
+@mixin display {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header {
+  .header_sec1 {
+    padding: 15px 0 13px;
+    background-color: #ec213e;
+    color: white;
+    font-size: 16px;
+    @include display;
+    .header_sec1_right {
+      display: flex;
+      align-items: center;
+      .header_sec1_right_shop {
+        align-items: center;
+        display: flex;
+        cursor: pointer;
+        .header_sec1_right_title {
+          margin-left: 25px;
+        }
+      }
+    }
+    .header_sec1_right_tel {
+      margin-left: 75px;
+      text-decoration: none;
+      color: white;
+      font-size: 18px;
+      font-family: 'Roboto-Regular';
+    }
+  }
+  .header_sec2 {
+    padding: 30px 0;
+    background: #1f1f1f;
+    @include display;
+    .header_sec2_logo {
+      width: 100%;
+    }
+    .header_sec2_formDiv {
+      display: flex;
+      margin: 0 40px 0 110px;
+      .header_sec2_form {
+        border: 0;
+        width: 610px;
+        height: 38px;
+        border-radius: 20px;
+      }
+      .header_sec2_formImg {
+        outline: none;
+        position: relative;
+        right: 46px;
+        padding: 5px 10px;
+        background-color: #ec213e;
+        border-radius: 20px;
+      }
+    }
+    .header_sec2_right {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+    }
+    .header_sec2_right:not(:last-child) {
+      margin-right: 5vw;
+    }
+  }
+  .header_sec3 {
+    padding: 17px 0 11px;
+    background-color: white;
+  }
+}
+@media (max-width: 1000px) {
+}
+@media (max-width: 880px) {
+}
+@media (max-width: 480px) {
+}

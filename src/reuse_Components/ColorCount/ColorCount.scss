@@ -1,0 +1,23 @@
+.colorCount {
+  display: flex;
+  height: 25px;
+  &-block {
+    width: 6px;
+    margin-left: 6px;
+  }
+  .block1 {
+    background: red;
+  }
+  .block2 {
+    background: rgb(240, 94, 94);
+  }
+  .block3 {
+    background: rgba(237, 247, 53, 0.843);
+  }
+  .block4 {
+    background: rgb(83, 214, 83);
+  }
+  .block5 {
+    background: green;
+  }
+}

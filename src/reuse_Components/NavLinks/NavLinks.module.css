@@ -1,0 +1,31 @@
+.nav {
+  padding-top: 50px;
+}
+.nav_ul {
+  font-size: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: 'Aeroport';
+}
+.nav_li {
+  list-style-type: none;
+}
+.nav_link {
+  text-decoration: none;
+  color: #979797;
+}
+.nav_line {
+  margin: 0 10px;
+}
+
+@media (max-width: 1000px) {
+  .nav {
+    padding: 0 25px;
+  }
+}
+@media (max-width: 480px) {
+  .nav {
+    padding: 0 16px;
+  }
+}
